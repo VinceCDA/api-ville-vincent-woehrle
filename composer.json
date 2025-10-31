@@ -17,7 +17,9 @@
         "laravel/wayfinder": "^0.1.9"
     },
     "require-dev": {
+        "bennett-treptow/laravel-migration-generator": "^4.5",
         "fakerphp/faker": "^1.23",
+        "laracademy/generators": "*",
         "laravel/boost": "^1.6",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.24",

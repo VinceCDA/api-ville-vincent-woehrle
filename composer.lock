@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e945be7f767e696074ae533bad5d215",
+    "content-hash": "34ced561ac21d48330050ba1aa94e096",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -6501,6 +6501,72 @@
     ],
     "packages-dev": [
         {
+            "name": "bennett-treptow/laravel-migration-generator",
+            "version": "4.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bennett-treptow/laravel-migration-generator.git",
+                "reference": "5c74e527787674a3ae364592be08d11c439b127a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bennett-treptow/laravel-migration-generator/zipball/5c74e527787674a3ae364592be08d11c439b127a",
+                "reference": "5c74e527787674a3ae364592be08d11c439b127a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/database": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "marcj/topsort": "^2.0",
+                "php": "^7.4|^8.0|^8.1|^8.2|^8.3|^8.4"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.15",
+                "orchestra/testbench": "^6.17|^8.0|^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelMigrationGenerator\\LaravelMigrationGeneratorProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelMigrationGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bennett Treptow",
+                    "email": "me@btreptow.com"
+                }
+            ],
+            "description": "Generate migrations from existing database structures",
+            "support": {
+                "issues": "https://github.com/bennett-treptow/laravel-migration-generator/issues",
+                "source": "https://github.com/bennett-treptow/laravel-migration-generator/tree/4.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://buymeacoffee.com/btreptow",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/bennett-treptow",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-29T23:32:12+00:00"
+        },
+        {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
             "source": {
@@ -6684,6 +6750,57 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.1.1"
             },
             "time": "2025-04-30T06:54:44+00:00"
+        },
+        {
+            "name": "laracademy/generators",
+            "version": "3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracademy/generators.git",
+                "reference": "69010c4257ea190638978ef60674b44b318fe16d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracademy/generators/zipball/69010c4257ea190638978ef60674b44b318fe16d",
+                "reference": "69010c4257ea190638978ef60674b44b318fe16d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laracademy\\Generators\\GeneratorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laracademy\\Generators\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael McMullen",
+                    "email": "michael@laracademy.co"
+                }
+            ],
+            "description": "This package will generate a Laravel Model based on your database table itself, filling in the required fields automatically.",
+            "keywords": [
+                "generators",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laracademy/generators/issues",
+                "source": "https://github.com/laracademy/generators/tree/3.7"
+            },
+            "time": "2023-10-21T03:09:07+00:00"
         },
         {
             "name": "laravel/boost",
@@ -7092,6 +7209,68 @@
                 "source": "https://github.com/laravel/sail"
             },
             "time": "2025-10-28T13:55:29+00:00"
+        },
+        {
+            "name": "marcj/topsort",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcj/topsort.php.git",
+                "reference": "972f58e42b5f110a0a1d8433247f65248abcfd5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcj/topsort.php/zipball/972f58e42b5f110a0a1d8433247f65248abcfd5c",
+                "reference": "972f58e42b5f110a0a1d8433247f65248abcfd5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "^9",
+                "symfony/console": "~2.5 || ~3.0 || ~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MJS\\TopSort\\": "src/",
+                    "MJS\\TopSort\\Tests\\": "tests/Tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marc J. Schmidt",
+                    "email": "marc@marcjschmidt.de"
+                }
+            ],
+            "description": "High-Performance TopSort/Dependency resolving algorithm",
+            "keywords": [
+                "dependency resolving",
+                "topological sort",
+                "topsort"
+            ],
+            "support": {
+                "issues": "https://github.com/marcj/topsort.php/issues",
+                "source": "https://github.com/marcj/topsort.php/tree/2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/marcj",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-24T12:39:55+00:00"
         },
         {
             "name": "mockery/mockery",
