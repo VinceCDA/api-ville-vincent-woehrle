@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 
 use App\Http\Resources\VillesFranceFreeResource;
+use Ramsey\Uuid\Type\Integer;
 
 class VilleDeFranceController extends Controller
 {
@@ -23,9 +24,9 @@ class VilleDeFranceController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function rechercheParDepartement(int $codeDerpartement)
     {
-        //
+        return VillesFranceFreeResource::collection(VillesFranceFree::where('ville_departement', $codeDerpartement)->cursor());
     }
 
     /**

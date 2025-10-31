@@ -30,3 +30,4 @@ Route::middleware('auth')->group(function () {
         ->name('two-factor.show');
 });
 Route::get('/villes_de_france', [VilleDeFranceController::class, 'index']);
+Route::get('/villes_de_france/departement/{codeDerpartement}', [VilleDeFranceController::class, 'rechercheParDepartement']);
