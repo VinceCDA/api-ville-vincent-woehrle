@@ -23,6 +23,5 @@ class VillesFranceFreeResource extends JsonResource
             'ville_latitude_deg' => $this->ville_latitude_deg,
             'ville_population_2012' => $this->ville_population_2012,
         ];
-        //return parent::toArray($request);
     }
 }
