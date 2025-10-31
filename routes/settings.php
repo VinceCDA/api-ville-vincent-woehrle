@@ -3,6 +3,9 @@
 use App\Http\Controllers\Settings\PasswordController;
 use App\Http\Controllers\Settings\ProfileController;
 use App\Http\Controllers\Settings\TwoFactorAuthenticationController;
+use App\Http\Controllers\VilleDeFranceController;
+use App\Models\VillesFranceFree;
+use App\Http\Resources\VillesFranceFreeResource;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -26,3 +29,4 @@ Route::middleware('auth')->group(function () {
     Route::get('settings/two-factor', [TwoFactorAuthenticationController::class, 'show'])
         ->name('two-factor.show');
 });
+Route::get('/villes_de_france', [VilleDeFranceController::class, 'index']);
