@@ -12,9 +12,9 @@ Executer les commandes "composer install" ensuite "npm install".
 # Utilisation
 
 Ouvrir un terminal à la racine du projet et entrer "composer run dev".
-Ouvrir une page web en entrant l'adresse "http://localhost:8000/villes_de_france/ville/{nom de la ville recherchée}" pour la recherche par nom de ville.
-Ouvrir une page web en entrant l'adresse "http://localhost:8000/villes_de_france/code/{code postal recherché}" pour la recherche par code postal.
-Ouvrir une page web en entrant l'adresse "http://localhost:8000/villes_de_france/departement{numéro du département recherché}" pour la recherche par département.
+Ouvrir une page web en entrant l'adresse http<area>://localhost:8000/villes_de_france/ville/{nom de la ville recherchée} pour la recherche par nom de ville.
+Ouvrir une page web en entrant l'adresse http<area>://localhost:8000/villes_de_france/code/{code postal recherché} pour la recherche par code postal.
+Ouvrir une page web en entrant l'adresse http<area>://localhost:8000/villes_de_france/departement{numéro du département recherché} pour la recherche par département.
 
 # Licence
 
