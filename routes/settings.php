@@ -31,3 +31,4 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('/villes_de_france', [VilleDeFranceController::class, 'index']);
 Route::get('/villes_de_france/departement/{codeDerpartement}', [VilleDeFranceController::class, 'rechercheParDepartement']);
+Route::get('/villes_de_france/ville/{nomVille}', [VilleDeFranceController::class, 'rechercheParNom']);

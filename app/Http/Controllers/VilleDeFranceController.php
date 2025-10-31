@@ -32,9 +32,9 @@ class VilleDeFranceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(VillesFranceFree $villesFranceFree)
+    public function rechercheParNom(string $nomDeVille)
     {
-        //
+        return VillesFranceFreeResource::collection(VillesFranceFree::where('ville_nom', $nomDeVille)->orWhere('ville_nom', 'like', '%' . $nomDeVille . '%')->cursor());
     }
 
     /**
